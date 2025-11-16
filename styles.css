@@ -1,0 +1,138 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 71, 106);
+}
+
+.container {
+  width: 80%;
+  height: 75%;
+  max-width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgb(132, 191, 255);
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  padding: 50px;
+}
+
+.left-section {
+  background-image: url("contact.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 25px 0 0 0;
+  letter-spacing: 2px;
+  color: #27476a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.field {
+  margin: 20px 0px;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 15px 15px 15px 25px;
+  border-radius: 25px;
+  border: none;
+  resize: none;
+  background-color: #d6edff;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #97b2fb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  width: 96%;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: #00b7d7;
+  color: #f0f0f0;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+  background-color: #00c8eb;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 325px) {
+  body {
+    background-color: #27476a;
+  }
+
+  .container {
+    position: unset;
+    display: unset;
+    background-color: transparent;
+    box-shadow: none;
+    width: 70%;
+  }
+
+  .left-section {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 20px 0 10px;
+    color: #ffffff;
+  }
+
+  .right-section {
+    padding: 10px;
+    width: 88%;
+    color: #ffffff;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px 0px 15px 15px;
+    border: none;
+    resize: none;
+    background-color: #d6edff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.856);
+  }
+
+  button {
+    width: 104%;
+    padding: 15px;
+  }
+}
