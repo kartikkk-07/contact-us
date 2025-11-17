@@ -64,7 +64,7 @@ textarea:focus {
 }
 
 button {
-  width: 96%;
+  width: 98%;
   padding: 15px;
   border-radius: 25px;
   border: none;
@@ -136,3 +136,4 @@ img {
     padding: 15px;
   }
 }
+
